@@ -1,6 +1,8 @@
 ﻿using NBitcoin;
 using System;
 
+
+// จะโดนได้ต้องรู้ address ชองผู้รับติด ScriptPubKey ไปในส่วนของ out address => hash => ScriptPubKey
 namespace BitCoinConsoleApp
 {
     class Program
@@ -25,7 +27,8 @@ namespace BitCoinConsoleApp
             Console.WriteLine("addressTestNet : " + publicKey.GetAddress(Network.TestNet));
 
 
-            Console.WriteLine("======================= publicKey => publicKeyHash");
+            // hash คือการลดรูปของ publicKey
+            Console.WriteLine("======================= publicKey => publicKeyHash => GetAddress");
             var publicKeyHash = publicKey.Hash;
             Console.WriteLine("publicKeyHash : " +  publicKeyHash); 
             var mainNetAddress = publicKeyHash.GetAddress(Network.Main);

@@ -9,3 +9,14 @@ C:\test\BitCoinConsoleApp\BitCoinConsoleApp\obj\Debug\netcoreapp2.0\BitCoinConso
 C:\test\BitCoinConsoleApp\BitCoinConsoleApp\bin\Debug\netcoreapp2.0\BitCoinConsoleApp.pdb
 C:\test\BitCoinConsoleApp\BitCoinConsoleApp\obj\Debug\netcoreapp2.0\BitCoinConsoleApp.dll
 C:\test\BitCoinConsoleApp\BitCoinConsoleApp\obj\Debug\netcoreapp2.0\BitCoinConsoleApp.pdb
+C:\test\BitCoinConsoleApp2017\BitCoinConsoleApp\bin\Debug\netcoreapp2.0\BitCoinConsoleApp.deps.json
+C:\test\BitCoinConsoleApp2017\BitCoinConsoleApp\bin\Debug\netcoreapp2.0\BitCoinConsoleApp.runtimeconfig.json
+C:\test\BitCoinConsoleApp2017\BitCoinConsoleApp\bin\Debug\netcoreapp2.0\BitCoinConsoleApp.runtimeconfig.dev.json
+C:\test\BitCoinConsoleApp2017\BitCoinConsoleApp\bin\Debug\netcoreapp2.0\BitCoinConsoleApp.dll
+C:\test\BitCoinConsoleApp2017\BitCoinConsoleApp\bin\Debug\netcoreapp2.0\BitCoinConsoleApp.pdb
+C:\test\BitCoinConsoleApp2017\BitCoinConsoleApp\obj\Debug\netcoreapp2.0\BitCoinConsoleApp.csprojResolveAssemblyReference.cache
+C:\test\BitCoinConsoleApp2017\BitCoinConsoleApp\obj\Debug\netcoreapp2.0\BitCoinConsoleApp.csproj.CoreCompileInputs.cache
+C:\test\BitCoinConsoleApp2017\BitCoinConsoleApp\obj\Debug\netcoreapp2.0\BitCoinConsoleApp.AssemblyInfoInputs.cache
+C:\test\BitCoinConsoleApp2017\BitCoinConsoleApp\obj\Debug\netcoreapp2.0\BitCoinConsoleApp.AssemblyInfo.cs
+C:\test\BitCoinConsoleApp2017\BitCoinConsoleApp\obj\Debug\netcoreapp2.0\BitCoinConsoleApp.dll
+C:\test\BitCoinConsoleApp2017\BitCoinConsoleApp\obj\Debug\netcoreapp2.0\BitCoinConsoleApp.pdb
