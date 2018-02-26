@@ -2,7 +2,9 @@
 using System;
 
 
-// จะโดนได้ต้องรู้ address ชองผู้รับติด ScriptPubKey ไปในส่วนของ out address => hash => ScriptPubKey
+// privateKey => publicKey => ย่นรูปให้สั้นลงเป็น publicKeyHash (Bitcoin Address)
+// Bitcoin Wallet ไว้เก็บ  Bitcoin Address และ Private Key
+// จะโอนได้ต้องรู้ address ชองผู้รับติด ScriptPubKey ไปในส่วนของ out address => hash => ScriptPubKey (แนวคิด)
 namespace BitCoinConsoleApp
 {
     class Program
