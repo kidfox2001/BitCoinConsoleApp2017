@@ -4,7 +4,10 @@ using System;
 
 // privateKey => publicKey => ย่นรูปให้สั้นลงเป็น publicKeyHash (Bitcoin Address)
 // Bitcoin Wallet ไว้เก็บ  Bitcoin Address และ Private Key
-// จะโอนได้ต้องรู้ address ชองผู้รับติด ScriptPubKey ไปในส่วนของ out address => hash => ScriptPubKey (แนวคิด)
+// รางวัล Bitcoin Subsidy นี้จะถูกมอบให้กับผู้สร้าง Block สำเร็จในรูปแบบ Transaction ที่ใส่ไว้ใน Block ปกตินี่แหละ เพียงแต่ว่า Transaction นี้ได้รับการยกเว้นไม่ต้องอ้างอิง inputs กับ Transaction ใด ๆ ก่อนหน้านี้ และด้วยความพิเศษของมัน Transaction นี้เลยมีชื่อเรียกเฉพาะด้วยว่า Coinbase Transaction หรือ Generation Transactionและเราจะใส่เจ้า Coinbase Transaction ตัวนี้ไว้เป็น Transaction แรกของ Block เสมอครับ 
+
+// จะโอนได้ต้องรู้ address ชองผู้รับติด ScriptPubKey ไปในส่วนของ out address => hash => ScriptPubKey (แนวคิด)/
+// ??? ScriptPubKey , โครงสร้างใน block
 namespace BitCoinConsoleApp
 {
     class Program
