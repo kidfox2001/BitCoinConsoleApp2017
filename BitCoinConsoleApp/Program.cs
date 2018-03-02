@@ -28,6 +28,7 @@ namespace BitCoinConsoleApp
             Console.WriteLine("publicKey : " +  publicKey);
 
 
+            // ง่ายมากที่จะรับ  bitcoin address จาก publicKey
             Console.WriteLine("");
             Console.WriteLine("======================= publicKey => GetAddress");
             Console.WriteLine("addressMain : " + publicKey.GetAddress(Network.Main));
@@ -59,11 +60,26 @@ namespace BitCoinConsoleApp
             Console.WriteLine("testNetAddress1ScriptPubKey : " + testNetAddress1.ScriptPubKey);
 
             Console.WriteLine("");
-            Console.WriteLine("======================= Address ที่ได้จาก ScriptPubKey ที่มาจาก hash เดียวกัน จะเท่ากับ hash ที่ GetAddress (ScriptPubKey หน้าจะมีความสัมพันกคับ publicKeyHash)");
+            Console.WriteLine("======================= Address ที่ได้จาก ScriptPubKey ที่มาจาก hash เดียวกัน จะเท่ากับ hash ที่ GetAddress (ScriptPubKey หน้าจะมีความสัมพันกับ publicKeyHash)");
             var paymentScript = publicKeyHash1.ScriptPubKey;
             var sameMainNetAddress = paymentScript.GetDestinationAddress(Network.Main);
             Console.WriteLine(mainNetAddress1 == sameMainNetAddress); // True
             Console.WriteLine(mainNetAddress1.ScriptPubKey == publicKeyHash1.ScriptPubKey); // True
+
+
+            // private key ที่เข้ารหัส Base58Check เรียกมันว่า Bitcoin Secret (หรือเรียกว่า Wallet Import Format หรือ simply WIF) คล้ายๆ  Bitcoin Addresses.
+            // เข้าใจว่า GetBitcoinSecret เป็นฟังชั่นเหมือนกันกับ GetWif
+            Console.WriteLine("");
+            Console.WriteLine("======================= GetBitcoinSecret");
+            BitcoinSecret mainNetPrivateKey = privateKey.GetBitcoinSecret(Network.Main);  // generate our Bitcoin secret(also known as Wallet Import Format or simply WIF) from our private key for the mainnet
+            BitcoinSecret testNetPrivateKey = privateKey.GetBitcoinSecret(Network.TestNet);  // generate our Bitcoin secret(also known as Wallet Import Format or simply WIF) from our private key for the testnet
+            Console.WriteLine(mainNetPrivateKey); 
+            Console.WriteLine(testNetPrivateKey); 
+
+            bool WifIsBitcoinSecret = mainNetPrivateKey == privateKey.GetWif(Network.Main);
+            Console.WriteLine(WifIsBitcoinSecret); // True
+
+
 
             Console.ReadLine();
         }
